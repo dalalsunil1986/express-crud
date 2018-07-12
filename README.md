@@ -1,19 +1,38 @@
-# Get started
+# Boilerplate Express Rest API Server (CRUD) with mock user data.
 
-## Install dependencies
+---
+
+## Get started
+
+### Install dependencies
 
 `npm install`
 
+---
+
 ## Run the app
 
-### without nodemon
+#### Without Nodemon
 
-`DEBUG=node-firestore:* npm start`
+`DEBUG=express-crud:* npm start`
 
-### with nodemon
+#### With Nodemon
 
-`DEBUG=node-firestore:* npm run devstart`
+`DEBUG=express-crud:* npm run devstart`
 
-### with environment variables
+#### With Nodemon and environment variables (eg. passing a PORT)
 
-`PORT=5000 DEBUG=node-firestore:* npm run devstart`
+`PORT=5000 DEBUG=express-crud:* npm run devstart`
+
+---
+
+## Hit Enpoint
+
+### User format
+
+`{ id: 0, first_name: 'Care', last_name: 'Engledow', email: 'cengledow0@php.net', gender: 'Male'}`
+
+### Users Endpoints
+
+`/api/users`
+`/api/users/:userId`
